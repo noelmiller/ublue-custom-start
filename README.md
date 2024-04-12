@@ -2,7 +2,13 @@
 
 # Purpose
 
-This repository is meant to be used as a template to build your own custom Universal Blue Image. This example base template is what the Universal Blue Project uses for all of our new and existing downstream projects ([Aurora](https://getaurora.dev/), [Bazzite](https://bazzite.gg/), [Bluefin](https://projectbluefin.io/), and [uCore](https://projectucore.io/)).
+This repository is meant to be a template for building your own custom Universal Blue image. This template is the recommended way to make customizations to any image published by the Universal Blue Project:
+- [Aurora](https://getaurora.dev/)
+- [Bazzite](https://bazzite.gg/)
+- [Bluefin](https://projectbluefin.io/)
+- [uCore](https://projectucore.io/)
+- [main](https://github.com/ublue-os/main/)
+- [hwe](https://github.com/ublue-os/hwe/) 
 
 This template includes a Containerfile and a Github workflow for building the container image. As soon as the workflow is enabled in your repository, it will build the container image and push it to the Github Container Registry.
 
@@ -11,29 +17,25 @@ This template includes a Containerfile and a Github workflow for building the co
 Working knowledge in the following topics:
 
 - Containers
-  - Resources:
-    - https://www.youtube.com/watch?v=SnSH8Ht3MIc
-    - https://www.mankier.com/5/Containerfile
+  - https://www.youtube.com/watch?v=SnSH8Ht3MIc
+  - https://www.mankier.com/5/Containerfile
 - rpm-ostree
-  - Resources:
-    - https://coreos.github.io/rpm-ostree/container/
+  - https://coreos.github.io/rpm-ostree/container/
 - Fedora Silverblue (and other Fedora Atomic variants)
-  - Resources:
-    - https://docs.fedoraproject.org/en-US/fedora-silverblue/
+  - https://docs.fedoraproject.org/en-US/fedora-silverblue/
 - Github Workflows
-  - Resources:
-    - https://docs.github.com/en/actions/using-workflows
+  - https://docs.github.com/en/actions/using-workflows
 
 # How to Use
 
 ## Template
 
-Since this is a template repository, you can select `Use this Template` and create a new repository from it. To enable the workflows, you will need to go the actions tab of the new repository and enable the workflows.
+Select `Use this Template` and create a new repository from it. To enable the workflows, you will need to go the `Actions` tab of the new repository and click to enable workflows.
 
 ## Containerfile
 
-This is the main file used to customize the base image you are using. There are several examples within of how to make modifications, including:
-- change the upstream image from which the custom image is derived
+This file defines the operations used to customize the selected image. It contains examples of possible modifications, including how to:
+- change the upstream from which the custom image is derived
 - add additional RPM packages
 - add binaries as a layer from other images
 - modify system files (like /etc/systemd/system.conf)
