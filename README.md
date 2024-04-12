@@ -2,7 +2,9 @@
 
 # Purpose
 
-This repository is meant to be used as a template to build your own custom Universal Blue Image. This example base template is what the Universal Blue Project uses for all of our new and existing downstream projects ([Aurora](https://getaurora.dev/), [Bazzite](https://bazzite.gg/), [Bluefin](https://projectbluefin.io/), and [uCore](https://projectucore.io/)). This template includes a Containerfile and a Github workflow for building the container image. As soon as the workflow is enabled in your repository, it will build the container image and push it to the Github Container Registry.
+This repository is meant to be used as a template to build your own custom Universal Blue Image. This example base template is what the Universal Blue Project uses for all of our new and existing downstream projects ([Aurora](https://getaurora.dev/), [Bazzite](https://bazzite.gg/), [Bluefin](https://projectbluefin.io/), and [uCore](https://projectucore.io/)).
+
+This template includes a Containerfile and a Github workflow for building the container image. As soon as the workflow is enabled in your repository, it will build the container image and push it to the Github Container Registry.
 
 # Prerequisites
 
