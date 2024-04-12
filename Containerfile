@@ -59,7 +59,7 @@ RUN mkdir -p /var/lib/alternatives
 # install a package from standard fedora repo or rpmfusion repo
 # RPMfusion packages are available by default in ublue main images
 # List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/40/x86_64/repoview/index.html&protocol=https&redirect=1
+# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 RUN rpm-ostree install screen
 # example package from rpmfusion
 #RUN rpm-ostree install vlc
