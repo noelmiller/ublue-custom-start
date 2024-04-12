@@ -48,19 +48,19 @@ Container signing is important for end-user security and is enabled on all Unive
 
 This provides users a method of verifying the image.
 
-> [!WARNING]
-> Be careful to *never* accidentally commit `cosign.key` into your git repo.
-
 1. Install the [cosign CLI tool](https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-install-cosign/#installing-cosign-with-the-cosign-binary)
 
-2. Run:
+2. Run inside your repo folder:
 
     ```bash
     cosign generate-key-pair
     ```
 
-    inside your repo folder
+    
     - Do NOT put in a password when it asks you to, just press enter. The signing key will be used in GitHub Actions and will not work if it is encrypted.
+
+> [!WARNING]
+> Be careful to *never* accidentally commit `cosign.key` into your git repo.
 
 3. Add the private key to GitHub
 
